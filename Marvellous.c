@@ -1,20 +1,24 @@
 #include<stdio.h>
 
-int main()
-{
-  int no1 = 10;
-  
-   const int no2 = 10;
-   //Arr is one dimensional array which contains 4 elements each elemnet is of type integer
-    int Arr[4]={10,20,30,40};
-    const int Brr[4] ={10,20,30,40};
-   
-    no1++;
+// Gharakhalacha dukan
+int Addition(int No1, int No2)      // Function Defination
+{   // Block chi surwat
+    int Ans = 0;                        // Local variable of Addition
+    Ans = No1 + No2;               // Berij keli by ALU
 
-    //no2++;
+    return Ans;                         // Jyane call kela tyala value dya
+}   // Block cha shewat
 
-    Arr[0]=11;
-    //Brr[0]=11;
+// Apala ghar
+int main()                              // Ithun program run hoto
+{   // Block chi surwat
+    // Local variables of main
+    int A = 10, B = 11, C = 0;
 
-    return 0;
-}
+    // C mhanaje rikami pishawi
+    C = Addition(A,B);             // Function call
+
+    printf("%d",C);                  // Gharachyanna bolun sanga kay zala te
+
+    return 0;                           // OS la kalawa ki sagala nit zala
+}   // Block cha shewat
